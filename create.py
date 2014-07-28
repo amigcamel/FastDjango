@@ -40,8 +40,8 @@ os.system('mkdir -p %s' % join(TAR_PATH, 'templates', appname))
 os.system('cp %s %s' % (join(SRS_PATH, 'templates', 'index.html'), join(TAR_PATH, 'templates', appname)))
 
 # set STATIC path
-os.system('mkdir -p %s' % join(TAR_PATH, 'static', appname))
-os.system('cp %s %s' % (join(SRS_PATH, 'static', 'logo_round.png'), join(TAR_PATH, 'static', appname)))
+os.system('mkdir -p %s' % join(TAR_PATH, 'static', 'img'))
+os.system('cp %s %s' % (join(SRS_PATH, 'static', 'logo_round.png'), join(TAR_PATH, 'static', 'img')))
 msg_static = '''STATICFILES_DIRS = (
     os.path.join(os.path.dirname(os.path.dirname(__file__)),'static'),
 )
